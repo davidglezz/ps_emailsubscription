@@ -29,7 +29,7 @@
     <p class="notification {if $nw_error}notification-error{else}notification-success{/if}">{$msg}</p>
   {/if}
   <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
-    <input type="text" name="email" value="{$value}" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
+    <input type="text" name="email" value="{$value}" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" required />
     {if $conditions}
       <p>{$conditions}</p>
     {/if}
